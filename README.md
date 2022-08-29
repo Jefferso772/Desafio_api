@@ -23,10 +23,6 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 
-## Exemplo de como usar api no Insomnia
-![Captura de tela 2022-08-28 223824](https://user-images.githubusercontent.com/73672968/187107649-da291c1d-31fc-4bcd-bdb9-363ef3fda885.png)
-
-
 ## Descrição
 
 
@@ -60,17 +56,142 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Categoria
+
+### Categoria (Create) [POST]
+
 
 ```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
+  + Attributes (object)
+			 + "nome": Nome da categoria (String)
+		 	 + "ordenacao": Como deseja a ordenacao (String) (DESC ou ASC)
+			 + "descricao": Descricao da categoria
+		
+```
 
-# test coverage
-$ npm run test:cov
+### Get por produto [GET/categoria/{id}produto]
+
+
+```bash
+
++ Parametro
+    + id Id da categoria
+    
+```
+
+### Get [GET/categoria/]
+
+```bash
+"categoria": [...]
+    
+```
+
+### Get Id [GET/categoria/{id}]
+
+
+```bash
+"categoria": {...}
+    
+```
+
+### Editar (Update) [PUT/categoria/{id}]
+
+```bash
+
+  + Attributes (object)
+			 + "nome": Nome da categoria (String)
+		 	 + "ordenacao": Como deseja a ordenacao (String) (DESC ou ASC)
+			 + "descricao": Descricao da categoria
+		
+```
+```bash
+ Response 200 "Message": "Atualizado com Sucesso"
+     
+```
+```bash
+ Response 404 {
+	"statusCode": 404,
+	"message": "Categoria com  o id {id} não cadastrado!!!",
+	"error": "Not Found"
+}
+```
+
+### Deletar (delete) [DELETE/categoria/{id}]
+```bash
+ Response 404 {
+	"statusCode": 404,
+	"message": "Categoria com id {id} nao cadastrado!",
+	"error": "Not Found"
+}
+```
+```bash
+  Response 200 "Message": "Excluido"
+     
 ```
 
 
+## Produto
+
+### Produto (Create) [POST/produto]
+
+```bash
+  + Attributes (object)
+		  "titulo": (String),
+		  "preco": (Number),
+		  "descricao": (String),
+	  	"categoria": (id da categoria que foi criado)
+```
+### Get [GET/produto/]
+
+```bash
+"produto": [...]
+    
+```
+
+### Get Id [GET/produto/{id}]
+
+
+```bash
+"produto": {...}
+    
+```
+
+### Editar (Update) [PUT/produto/{id}]
+
+
+```bash
+  + Attributes (object)
+		  "titulo": (String),
+		  "preco": (Number),
+		  "descricao": (String),
+	  	"categoria": (id da categoria que foi criado)
+```
+
+```bash
+ Response 200 "Message": "Atualizado com Sucesso"
+     
+```
+```bash
+ Response 404 {
+	"statusCode": 404,
+	"message": "Produto com  o id {id} não cadastrado!!!",
+	"error": "Not Found"
+}
+```
+### Deletar (delete) [DELETE/produto/{id}]
+```bash
+ Response 404 {
+	"statusCode": 404,
+	"message": "Produto com id {id} nao cadastrado!",
+	"error": "Not Found"
+}
+```
+```bash
+  Response 200 "Message": "Excluido"
+     
+```
+
+
+## Exemplo no Insomnia
+![Captura de tela 2022-08-28 223824](https://user-images.githubusercontent.com/73672968/187107649-da291c1d-31fc-4bcd-bdb9-363ef3fda885.png)
