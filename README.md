@@ -27,7 +27,7 @@
 ![Captura de tela 2022-08-28 223824](https://user-images.githubusercontent.com/73672968/187107649-da291c1d-31fc-4bcd-bdb9-363ef3fda885.png)
 
 
-## Description
+## Descrição
 
 
 ```bash
