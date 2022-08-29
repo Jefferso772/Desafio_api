@@ -58,7 +58,7 @@ $ npm run start:prod
 
 ## Categoria
 
-### Categoria (Create) [POST]
+### Categoria (Create) [POST/categoria]
 
 
 ```bash
