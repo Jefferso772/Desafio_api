@@ -68,6 +68,7 @@ $ npm run start:prod
 	 + "ordenacao": Como deseja a ordenacao (String) (DESC ou ASC)
 	 + "descricao": Descricao da categoria
 		
+		
 ```
 
 ### Get por produto [GET/categoria/{id}produto]
