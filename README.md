@@ -64,9 +64,9 @@ $ npm run start:prod
 ```bash
 
   + Attributes (object)
-			 + "nome": Nome da categoria (String)
-		 	 + "ordenacao": Como deseja a ordenacao (String) (DESC ou ASC)
-			 + "descricao": Descricao da categoria
+	 + "nome": Nome da categoria (String)
+	 + "ordenacao": Como deseja a ordenacao (String) (DESC ou ASC)
+	 + "descricao": Descricao da categoria
 		
 ```
 
@@ -100,9 +100,9 @@ $ npm run start:prod
 ```bash
 
   + Attributes (object)
-			 + "nome": Nome da categoria (String)
-		 	 + "ordenacao": Como deseja a ordenacao (String) (DESC ou ASC)
-			 + "descricao": Descricao da categoria
+	 + "nome": Nome da categoria (String)
+	 + "ordenacao": Como deseja a ordenacao (String) (DESC ou ASC)
+	 + "descricao": Descricao da categoria
 		
 ```
 ```bash
@@ -137,10 +137,10 @@ $ npm run start:prod
 
 ```bash
   + Attributes (object)
-		  "titulo": (String),
-		  "preco": (Number),
-		  "descricao": (String),
-	  	"categoria": (id da categoria que foi criado)
+	  "titulo": (String),
+	  "preco": (Number),
+   	  "descricao": (String),
+	  "categoria": (id da categoria que foi criado)
 ```
 ### Get [GET/produto/]
 
@@ -162,10 +162,10 @@ $ npm run start:prod
 
 ```bash
   + Attributes (object)
-		  "titulo": (String),
-		  "preco": (Number),
-		  "descricao": (String),
-	  	"categoria": (id da categoria que foi criado)
+	 "titulo": (String),
+	 "preco": (Number),
+	 "descricao": (String),
+	 "categoria": (id da categoria que foi criado)
 ```
 
 ```bash
